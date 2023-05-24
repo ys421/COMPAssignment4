@@ -23,9 +23,8 @@
     let isCardClickable = true;
   
     startButton.addEventListener("click", async () => {
-      const checkedBox = difficultyGroup.querySelector(
-        "input[type='checkbox']:checked"
-      );
+      const checkedBox = difficultyGroup.querySelector("input[type='radio']:checked");
+
   
       if (checkedBox) {
         difficulty = checkedBox.value;
